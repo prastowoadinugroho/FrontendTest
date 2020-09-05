@@ -1,0 +1,12 @@
+@mixin breakpoint($point) {
+    @if $point == optimal3 {
+        @media screen and(min-width:1016px){
+            @content;
+        }
+    }
+    @else if $point == optimal4 {
+        @media screen and(min-width:1060px){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.column {
+    float: left;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+  
+.left{
+    width: 20%;
+    background-color: white;
+    .item4-check{
+        .imgs img {
+            width: 30px;
+            margin-left: 20px;
+            margin-top: 6px;
+        }
+    }
+}
+  
+  
+.right {
+    width: 25%;
+    background-color: white;
+    .item4-kanan{
+        button {
+            margin-top: 4px;
+            margin-bottom: 5px;
+            border-radius: 20px;
+            border: #b5fafbb4 solid 2px;
+            height: 30px;
+            font-weight: bold;
+            color: white;
+            width: 100px;
+        }
+    }
+}
+  
+.middle {
+    width: 50%;
+    .item4-kiri{
+        .texts{
+            font-size: 15px;
+            color: #C3C3C4;
+            line-height: 40px;
+        }
+    }
+}
+
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

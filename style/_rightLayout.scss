@@ -1,0 +1,193 @@
+@import './media';
+$small: 300px;
+$medium: 900px;
+.right{
+    background-color: #252A40 ;
+    
+    .box {
+        height: 97%;
+        width: 97%;
+        margin-top: 8px;
+        margin-left: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        background: white;
+        border-radius: 15px;
+        .box-1 {
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            gap: 10px;
+            align-self: end;
+            .item{
+                .title-right {
+                    margin-top: 30px;
+                    margin-left: 20px;
+                    font-size: 25px;
+                    color: #5f606d;
+                    line-height: 1;
+                }
+                .span-right {
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #C3C3C4;
+                }
+                .today{
+                    margin-top: 50px;
+                    font-size: 20px;
+                    margin-left: 20px;
+                    color: #5f606d;
+                }
+            }
+            .item2{
+                .imgs{
+                    margin-top: 17px;
+                    display: grid;
+                    gap: 3px;
+                    grid-template-columns: repeat(auto-fit,28px);
+                    margin-left: 40px;  
+                }
+                .imgs img {
+                    width: 100%;
+                    object-fit: cover;
+                    border: white ;
+                    border-radius: 40px;
+                }
+
+                @include breakpoint(optimal3){
+                    .imgs{
+                        margin-left: 80px;  
+                    }
+                }
+                @include breakpoint(optimal4){
+                    .imgs{
+                        margin-left: 40px;  
+                    }
+                }
+            }
+            
+        }
+        .item3{
+            margin-top: 20px;
+            height: 2px;
+            width: 94%;
+            background: #EDEDED;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin-left: 20px;
+            
+        }
+        .item4 {
+            width: 94%;
+            margin-left: 20px;          
+            margin-top: 10px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: grid;
+
+            .column {
+                float: left;
+                padding: 10px;
+                height: 200px; 
+            }
+
+            
+            
+              
+            .left{
+                width: 20%;
+                background-color: white;
+                .item4-check{
+                    .imgs img {
+                        width: 30px;
+                        margin-left: 20px;
+                        margin-top: 6px;
+                    }
+                }
+            }
+         
+            .right {
+                width: 25%;
+                background-color: white;
+                .item4-kanan{
+                    button {
+                        margin-top: 4px;
+                        margin-bottom: 5px;
+                        border-radius: 20px;
+                        border: #b5fafbb4 solid 2px;
+                        height: 30px;
+                        font-weight: bold;
+                        color: white;
+                        width: 100px;
+                    }
+                }
+            }
+              
+            .middle {
+                width: 50%;
+                .item4-kiri{
+                    .texts{
+                        font-size: 15px;
+                        color: #C3C3C4;
+                        line-height: 40px;
+                    }
+                }
+            }
+             
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+           
+          @media (max-width: 805px){
+                .right {
+                    width: 25%;
+                    background-color: white;
+                    .item4-kanan{
+                        button {
+                            margin-top: 4px;
+                            margin-bottom: 5px;
+                            border-radius: 20px;
+                            border: #b5fafbb4 solid 2px;
+                            height: 30px;
+                            font-weight: bold;
+                            color: white;
+                            width: 80px;
+                        }
+                    }
+                }
+                .middle {
+                    width: 50%;
+                    .item4-kiri{
+                        .texts{
+                            font-size: 12px;
+                            color: #C3C3C4;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .item5{
+            padding-bottom: 100px;
+            position:relative;
+            button{
+                position:absolute;
+                bottom:0;
+                right:0;
+                margin-bottom: 20px;
+                margin-right: 10px;
+                background-color: #864ACA;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                padding: 12px 16px;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 1px 5px 7px #864ACA;
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,91 @@
+.left{
+    background-color: #252A40 ;
+    display: grid;
+    .box-left {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        align-self: end;
+        justify-content: center;
+        margin-bottom: 15px;
+        
+        .title-left{
+            color: white;
+            font-size: 35px;
+        }
+
+        .text-2 {
+            font-size: 15px; 
+            color: #54596D;
+        }
+    }
+
+    .box-search {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-self: center;
+        .search {
+            font-size: 16px;
+            background-color: #3A3F53;
+            width: 330px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            
+            .text-search{
+                margin-top: 11px;
+                padding-left: 15px;
+                color: #B4B6CA;
+            }
+            .fa{
+                padding-right: 20px;
+            }
+        }
+
+    }
+    .box-project{
+        width: 330px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        justify-self: center;
+        padding-bottom: 60px;
+
+        .text-project {
+           color: white;
+           font-size: 16px;
+           .span-text{
+               font-size: 13px;
+               color: #54596D;
+           }
+           margin-bottom: 5px;
+        }
+        .galery{
+            gap: 45px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,80px);
+            
+        }
+
+        .title{
+            gap: 45px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,80px);
+            margin-bottom: 20px;
+        }
+        .title-image {
+            font-size: 12px;
+            color: #54596D;
+            text-align: center;
+        }
+
+        .galery img {
+            width: 100%;
+            object-fit: cover;
+            border: #252A40  5px solid;
+            border-radius: 20px;
+          
+        }
+    }
+}
